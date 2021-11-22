@@ -1,0 +1,228 @@
+/*Header CSS*/
+
+.header {
+    width: 100%;
+    height: 135px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e26;
+}
+
+.header .logo {
+    max-width: 190px;
+    padding: 30px;
+}
+
+.header>ul {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.header>ul>li {
+    padding: 20px;
+    list-style: none;
+}
+
+.header>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.search {
+    position: relative;
+}
+
+.header input {
+    padding: 18px;
+    width: 280px;
+    border-radius: 20px;
+    border: none;
+    height: 28px;
+    background-color: #1e1e26;
+    border: 1px solid white;
+}
+
+.header input::placeholder {
+    font-weight: 900;
+    margin-left: 20px;
+}
+
+.header button {
+    border-radius: 20px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(27, 199, 182);
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    right: 3px;
+    top: 4px;
+}
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: #111115;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content ul {
+    position: relative;
+    background-color: #111115;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-content .nerdb {
+    margin: 0px 100px 0px 0px;
+    padding: 20px;
+}
+
+.nav-content ul .other-itens {
+    margin: 0px 50px 0px 0px;
+}
+
+.nav-content ul .other-itens a {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.nav-content ul li {
+    display: inline-block;
+}
+
+.nav-content ul li a {
+    text-decoration: none;
+    font-size: 1.10rem;
+    font-weight: bold;
+    color: rgb(26, 153, 175);
+}
+
+.nav-content ul ul .dropdown {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.nav-content ul ul {
+    position: absolute;
+    min-width: 220px;
+    display: none;
+    z-index: 1;
+}
+
+.nav-content ul ul li {
+    display: block;
+    background-color: #1e1e26;
+    border-bottom: 1px solid #0c0c0c;
+    padding: 20px;
+}
+
+.nav-content ul li:hover ul {
+    margin-top: 13px;
+    display: block;
+}
+
+.nav-content ul ul li:hover {
+    background-color: #0c0c0c;
+}
+
+.nav-content ul ul li .dropdown>i {
+    font-size: 10px;
+    z-index: 1;
+}
+
+.nav-content ul li i {
+    font-size: 30px;
+}
+
+.nav-content ul ul li .dd1>i {
+    color: red;
+}
+
+.nav-content ul ul li .dd2>i {
+    color: green;
+}
+
+.nav-content ul ul li .dd3>i {
+    color: blue;
+}
+
+.nav-content ul ul li .dd4>i {
+    color: crimson;
+}
+
+.nav-content ul ul li .dd5>i {
+    color: darkmagenta;
+}
+
+.nav-content ul li:hover i {
+    transform: rotate(179deg);
+}
+
+@media screen and ( max-width:1147px) {
+    .header>ul {
+        display: none;
+    }
+    .header input {
+        display: none;
+    }
+    .header button {
+        display: none;
+    }
+    /*Main CSS Responsive*/
+    .body-content {
+        margin-top: 0px;
+        max-width: 100%;
+        height: 1200px;
+        border-radius: 0px;
+    }
+}
+
+@media screen and ( max-width:1134px) {
+    .content-top {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .content-news1 {
+        width: 100%;
+        margin-right: 10px;
+        border: none;
+    }
+    .card {
+        width: 100%;
+    }
+    .picture {
+        max-width: 100%;
+    }
+}
+
+@media screen and ( max-width: 840px) {
+    body {
+        width: 100vh;
+    }
+    .nav-content {
+        display: none;
+    }
+    .middle-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .middle-content>.card {
+        width: 580px;
+        padding: 20px 0px 0px 0px;
+    }
+}
