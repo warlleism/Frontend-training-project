@@ -8,6 +8,7 @@
     justify-content: center;
     align-items: center;
     background-color: #1e1e26;
+    position: relative;
 }
 
 .header .logo {
@@ -173,10 +174,11 @@
     transform: rotate(179deg);
 }
 
+.menu {
+    display: none;
+}
+
 @media screen and ( max-width:1147px) {
-    .header>ul {
-        display: none;
-    }
     .header input {
         display: none;
     }
@@ -214,6 +216,9 @@
     body {
         width: 100vh;
     }
+    .header>ul {
+        display: none;
+    }
     .nav-content {
         display: none;
     }
@@ -224,5 +229,27 @@
     .middle-content>.card {
         width: 580px;
         padding: 20px 0px 0px 0px;
+    }
+    .menu {
+        background-color: rgba(255, 99, 71, 0);
+        display: block;
+        width: 117px;
+        position: absolute;
+        top: 75px;
+    }
+    .menu .nerdb {
+        margin: 0;
+    }
+    .menu ul {
+        background-color: rgba(255, 99, 71, 0);
+    }
+    .nav-content ul li:focus ul {
+        margin-top: 13px;
+        display: block;
+    }
+    .menu ul ul li {
+        background-color: #1e1e26;
+        border-bottom: 1px solid #0c0c0c;
+        padding: 20px;
     }
 }
