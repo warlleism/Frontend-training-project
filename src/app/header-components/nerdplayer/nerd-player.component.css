@@ -1,13 +1,13 @@
+a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.878);
+}
+
 main {
     display: flex;
     justify-content: center;
     width: 100%;
     background-color: rgb(38, 39, 46);
-}
-
-a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.878);
 }
 
 .body-content {
@@ -79,13 +79,10 @@ a {
 .card {
     display: flex;
     flex-direction: column;
+    background-color: white;
     border: none;
-    width: 500px;
-}
-
-.picture {
-    max-width: 600px;
-    border-radius: 5px;
+    width: 530px;
+    padding: 10px;
 }
 
 .card-content h4 {
@@ -96,15 +93,6 @@ a {
 .card-content h3 {
     font-size: 1.8rem;
     font-weight: 500;
-}
-
-
-/*Midle Content*/
-
-.middle-content {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
 }
 
 .content-news2 {
@@ -120,17 +108,38 @@ a {
     margin-left: 10px;
 }
 
+.content-news2 h1 {
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: 2px underline;
+    color: rgb(75, 218, 203);
+}
+
 .content-news2 h2 {
     margin-top: 20px;
 }
 
 .middle-content>.card {
-    width: 400px;
+    width: 600px;
     padding: 20px 10px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
 }
 
 .middle-content>.card>img {
+    width: 400px;
+    height: 200px;
     border-radius: 8px;
+}
+
+.middle-content .card-content {
+    margin-left: 20px;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 
