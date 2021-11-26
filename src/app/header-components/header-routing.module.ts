@@ -20,6 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
+  declarations: [NerdcastComponent, NerdofficeComponent, NerdPlayerComponent],
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
