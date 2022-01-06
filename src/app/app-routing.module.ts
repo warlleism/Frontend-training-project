@@ -3,8 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './template/home/home.component';
 
 const routes: Routes = [
+
   {
-    path: '',
+    path:'' , pathMatch:'full', redirectTo: 'home'
+  },
+
+  {
+    path: 'home',
     component: HomeComponent,
   },
   {
@@ -20,3 +25,4 @@ const routes: Routes = [
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
+""
